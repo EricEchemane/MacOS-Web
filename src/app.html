@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<link rel="icon" href="%svelte.assets%/favicon.png" />
+	<!-- custom styling -->
+	<link rel="stylesheet" href="%svelte.assets%/global.css" />
+	<link rel="stylesheet" href="%svelte.assets%/styling/button.css" />
+	<link rel="stylesheet" href="%svelte.assets%/styling/modal.css" />
+	<link rel="stylesheet" href="%svelte.assets%/styling/surfaces.css" />
+	<link rel="stylesheet" href="%svelte.assets%/styling/inputs/radio.css" />
+	<link rel="stylesheet" href="%svelte.assets%/styling/inputs/checkbox.css" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	%svelte.head%
+</head>
+
+<body style="padding: 3rem;">
+	<button onclick="toggleTheme()"> Toggle Theme </button>
+	<div>%svelte.body%</div>
+
+	<script>
+		let light = true;
+		function toggleTheme() {
+			light ? document.body.classList.add('dark-theme') : document.body.classList.remove('dark-theme');
+			light = !light;
+		}
+	</script>
+</body>
+
+</html>
