@@ -1,5 +1,5 @@
 .radio-container {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: .75rem;
 }
@@ -17,6 +17,9 @@
     cursor: pointer;
     filter: brightness(1.2);
     background: var(--gray4);
+}
+.radio-container input[type="radio"]:focus + .radio{
+    box-shadow: 0 0 0 2px var(--teal) !important;
 }
 .radio-container input[type="radio"]:checked + .radio {
     box-shadow: inset 0 0 0 5px var(--blue);

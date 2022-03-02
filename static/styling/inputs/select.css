@@ -18,7 +18,7 @@ select {
     cursor: pointer;
 }
 select:focus {
-	box-shadow: 0 0 0 2px var(--blue);
+	box-shadow: 0 0 0 2px var(--teal);
 }
 option {
     background-color: var(--bg);

@@ -41,7 +41,7 @@ button {
 	width: max-content;
 }
 button:focus {
-	box-shadow: 0 0 0 2px var(--blue);
+	box-shadow: 0 0 0 2px var(--teal);
 }
 button:disabled {
 	cursor: not-allowed;
