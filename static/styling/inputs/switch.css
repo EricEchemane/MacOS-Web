@@ -1,8 +1,10 @@
+input[type="checkbox"][role="switch"].small {
+    transform: scale(.8);
+}
 input[type="checkbox"][role="switch"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    transition: 100ms;
     position: relative;
     --transformX: 3px;
     --width: 40px;
@@ -28,7 +30,7 @@ input[type="checkbox"][role="switch"]::before {
     height: calc(100% - 6px);
     border-radius: 50%;
     background-color: white;
-    transition: 100ms;
+    transition: 85ms ease;
     -webkit-transform: translate(var(--transformX), 3px);
     transform: translate(var(--transformX), 3px);
     box-shadow: 0 0 1 4px var(--gray2);
