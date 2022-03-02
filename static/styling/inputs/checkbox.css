@@ -23,4 +23,8 @@
     background-size: 200%;
     background-position: center center;
     box-shadow: none;
+    box-shadow: 0 0 0 2px var(--teal);
+}
+.checkbox-container input[type="checkbox"]:focus + .checkbox  {
+    box-shadow: 0 0 0 2px var(--teal);
 }
