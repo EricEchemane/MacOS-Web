@@ -22,7 +22,7 @@
 	<div class="menu-items" role="option">
 		<div class="menu-item">Undo</div>
 		<div class="menu-item">Redo</div>
-		<div class="menu-item">Cut</div>
+		<div class="menu-item disabled">Cut</div>
 		<div class="hr" />
 		<div class="menu-item">Redo</div>
 		<div class="menu-item">Cut</div>

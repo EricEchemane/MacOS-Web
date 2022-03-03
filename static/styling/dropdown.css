@@ -45,6 +45,11 @@ div.menu-items {
     border: 1px solid var(--gray3);
 }
 
+div.menu-item.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
 div.menu-item {
     cursor: pointer;
     padding: .3rem .5rem;
