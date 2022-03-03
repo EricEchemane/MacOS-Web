@@ -1,7 +1,7 @@
 div.menu-wrapper {
     width: max-content;
     display: inline-block;
-    height: 2rem;
+    height: 2.5rem;
     position: relative;
 }
 div.menu-label {
@@ -21,22 +21,27 @@ div.menu-wrapper:hover .menu-items{
 }
 div.menu-items {
     position: absolute;
-    top: 2rem;
+    top: 2.3rem;
     left: 0;
     max-width: max-content;
     min-width: 14ch;
     transition: 200ms ease;
+    transition-delay: 50ms;
+    background: var(--bg);
+    z-index: 3;
+    will-change: transform, opacity;
 
     opacity: 0;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
     pointer-events: none;
 
     transform-origin: top;
     border-radius: .5rem;
-    box-shadow: 0 0 0 1px hsla(0, 0%, 0%, .18), 0 4px 24px -12px hsla(0, 0%, 0%, .7);
+    box-shadow: 0 4px 24px -12px hsla(0, 0%, 0%, .7);
     padding: .5rem;
     display: flex;
     flex-direction: column;
+    border: 1px solid var(--gray3);
 }
 
 div.menu-item {
@@ -50,4 +55,7 @@ div.menu-item {
 }
 div.menu-item:hover {
     background: var(--gray4);
+}
+div.menu-item:active {
+    background: var(--gray5);
 }
