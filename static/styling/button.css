@@ -85,3 +85,46 @@ div.icon-button::before {
 	z-index: 2;
 	background: linear-gradient(to bottom, transparent, transparent, hsla(0, 0%, 0%, .1));
 }
+/* call to action */
+button.call-to-action::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+	background: var(--blue);
+	opacity: .1;
+	transition: 200ms;
+}
+button.call-to-action {
+	--color: var(--blue);
+	position: relative;
+    white-space: nowrap;
+    border-radius: 5px;
+    color: var(--color);
+    outline: 0;
+    border: 0;
+	font-size: 1rem;
+	font-weight: 400;
+    padding: 14px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color .3s ease;
+	border: none;
+	overflow: hidden;
+	box-shadow: none;
+} 
+button.call-to-action:focus {
+	filter: brightness(1.1);
+}
+button.call-to-action:hover::before {
+	opacity: .2;
+}
+button.call-to-action i {
+	color: var(--color);
+	margin-left: .5rem;
+	font-size: inherit;
+}

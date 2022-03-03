@@ -19,4 +19,7 @@
 	<div class="icon-button" role="button">
 		<i class="bx bx-skip-next" />
 	</div>
+	<br />
+	<br />
+	<button class="call-to-action"> Save <i class="bx bx-download" /> </button>
 </main>
