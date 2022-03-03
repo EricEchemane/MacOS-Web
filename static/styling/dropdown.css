@@ -1,0 +1,53 @@
+div.menu-wrapper {
+    width: max-content;
+    display: inline-block;
+    height: 2rem;
+    position: relative;
+}
+div.menu-label {
+    border-radius: .3rem;
+    width: min-content;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 0%, .18);
+    padding: .25rem .6rem;
+    cursor: default;
+}
+div.menu-wrapper:hover div.menu-label {
+    background: var(--gray4);
+}
+div.menu-wrapper:hover .menu-items{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: visible;
+}
+div.menu-items {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    max-width: max-content;
+    min-width: 14ch;
+    transition: 200ms ease;
+
+    opacity: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    transform-origin: top;
+    border-radius: .5rem;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 0%, .18), 0 4px 24px -12px hsla(0, 0%, 0%, .7);
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+div.menu-item {
+    cursor: pointer;
+    padding: .3rem .5rem;
+    border-radius: .2rem;
+    transition: 100ms;
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+div.menu-item:hover {
+    background: var(--gray4);
+}

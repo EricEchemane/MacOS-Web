@@ -112,3 +112,7 @@ body {
 .text2 {
 	color: var(--text2);
 }
+div.hr {
+	border-bottom: 1px solid var(--gray1);
+	margin: .5rem;
+}
