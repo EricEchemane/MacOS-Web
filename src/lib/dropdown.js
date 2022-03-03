@@ -4,11 +4,11 @@ export function listenToDropdown() {
 
     dropdowns.forEach(dropdown => {
         dropdown.addEventListener('click', (e) => {
-            if (currentOpenDropdown) {
+            if (currentOpenDropdown && currentOpenDropdown !== dropdown) {
                 currentOpenDropdown.classList.remove('show');
             }
             currentOpenDropdown = dropdown;
-            dropdown.classList.add('show');
+            dropdown.classList.toggle('show');
         });
     });
 

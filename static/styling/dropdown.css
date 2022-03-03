@@ -60,7 +60,7 @@ div.menu-item {
     padding-right: 2rem;
 }
 div.menu-item:hover {
-    background: var(--gray4);
+    background: var(--gray5);
 }
 div.menu-item:active {
     background: var(--gray5);
