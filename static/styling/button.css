@@ -40,14 +40,48 @@ button {
 	color: var(--text1);
 	width: max-content;
 }
-button:focus {
-	box-shadow: 0 0 0 2px var(--teal);
-}
 button:disabled {
 	cursor: not-allowed;
 	opacity: .5;
 }
+button:focus {
+	box-shadow: 0 0 0 2px var(--teal);
+}
 button.filled {
 	background: var(--blue);
 	color: hsla(0, 100%, 100%, 1);
+}
+div.icon-button:active::before {
+	background: linear-gradient(to top, transparent, transparent, hsla(0, 0%, 0%, .1));
+}
+div.icon-button.disabled {
+	cursor: not-allowed;
+	pointer-events: none;
+	opacity: .5;
+}
+div.icon-button {
+	--size: 2.25rem;
+	width: var(--size);
+	line-height: 1rem;
+	height: var(--size);
+	font-size: 1.5rem;
+	border-radius: .3rem;
+	background: var(--bg);
+	display: inline-grid;
+	place-items: center;
+	box-shadow: 0 0 0 1px var(--gray4);
+	color: var(--text);
+	background: var(--bg);
+	cursor: pointer;
+	position: relative;
+}
+div.icon-button::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+	background: linear-gradient(to bottom, transparent, transparent, hsla(0, 0%, 0%, .1));
 }
