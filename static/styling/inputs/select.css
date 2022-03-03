@@ -5,7 +5,7 @@ select {
     box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
     line-height: 16px;
     color: var(--text1);

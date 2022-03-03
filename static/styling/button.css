@@ -64,7 +64,7 @@ div.icon-button {
 	width: var(--size);
 	line-height: 1rem;
 	height: var(--size);
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	border-radius: .3rem;
 	background: var(--bg);
 	display: inline-grid;
