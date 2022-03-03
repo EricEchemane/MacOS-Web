@@ -104,7 +104,7 @@ body.dark-theme {
 	outline: none;
 }
 body {
-	background-color: var(--bg);
+	background: var(--bg);
 }
 .text1 {
 	color: var(--text1);
