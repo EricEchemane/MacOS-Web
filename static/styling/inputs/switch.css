@@ -48,6 +48,3 @@ input[type="checkbox"][role="switch"]:disabled {
     cursor: not-allowed;
     opacity: 0.5;
 }
-input[type="checkbox"][role="switch"]:focus {
-	box-shadow: 0 0 0 2px var(--teal);
-}
