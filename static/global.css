@@ -25,7 +25,7 @@
 	--gray6-4light: hsl(240, 24%, 96%);
 
 	/* Dark Theme */
-	--bg-main-dark:  hsl(240, 3%, 7%);
+	--bg-main-dark:hsl(0, 0%, 20%);
 	--bg-dark: hsl(0, 0%, 16%);
 	--text-4dark1: hsl(0, 0%, 100%);
 	--text-4dark2: hsl(0, 0%, 80%);
