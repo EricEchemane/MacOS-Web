@@ -1,20 +1,18 @@
 div.menu-wrapper {
     width: max-content;
     display: inline-block;
-    height: 2.5rem;
+    height: auto;
     position: relative;
 }
 div.menu-label {
     border-radius: .3rem;
     width: min-content;
-    box-shadow: 0 0 0 1px hsla(0, 0%, 0%, .18);
+    box-shadow: 0 0 0 1px var(--gray3);
+    cursor: pointer;
     padding: .25rem .6rem;
     cursor: default;
 }
-div.menu-wrapper:hover div.menu-label {
-    background: var(--gray4);
-}
-div.menu-wrapper:hover .menu-items{
+div.menu-wrapper.show .menu-items{
     opacity: 1;
     transform: translateY(0);
     pointer-events: visible;
@@ -25,8 +23,7 @@ div.menu-items {
     left: 0;
     max-width: max-content;
     min-width: 14ch;
-    transition: 200ms ease;
-    transition-delay: 50ms;
+    transition: 100ms ease;
     background: var(--bg);
     z-index: 3;
     will-change: transform, opacity;

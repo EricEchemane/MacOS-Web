@@ -1,3 +1,11 @@
+<script>
+	import { listenToDropdown } from '$lib/dropdown';
+	import { onMount } from 'svelte';
+	onMount(() => {
+		listenToDropdown();
+	});
+</script>
+
 <br />
 <br />
 <div class="menu-wrapper">
@@ -15,8 +23,13 @@
 		<div class="menu-item">Undo</div>
 		<div class="menu-item">Redo</div>
 		<div class="menu-item">Cut</div>
+		<div class="hr" />
+		<div class="menu-item">Redo</div>
+		<div class="menu-item">Cut</div>
 	</div>
 </div>
+<br />
+<br />
 <p>
 	Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim incidunt reprehenderit alias culpa
 	voluptatem? Ipsum distinctio excepturi, est esse similique ea perspiciatis eveniet magnam saepe

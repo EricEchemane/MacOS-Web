@@ -113,6 +113,6 @@ body {
 	color: var(--text2);
 }
 div.hr {
-	border-bottom: 1px solid var(--gray1);
-	margin: .5rem;
+	border-bottom: 1px solid var(--gray2);
+	margin: .4rem;
 }
