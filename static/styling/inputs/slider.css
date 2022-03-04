@@ -18,6 +18,9 @@ input[type="range"] {
 input[type="range"]:hover {
     --thumb-offset: 0.5rem;
 }
+input[type="range"]:focus-visible {
+    box-shadow: 0 0 0 2px var(--teal);
+}
 
 input[type="range"]::-webkit-slider-runnable-track {
     height: 4px;

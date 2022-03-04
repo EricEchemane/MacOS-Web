@@ -40,6 +40,10 @@ input[type="checkbox"][role="switch"]:checked {
     background-color: var(--blue);
 }
 
+input[type="checkbox"][role="switch"]:focus-visible {
+    box-shadow: 0 0 0 2px var(--teal);
+}
+
 input[type="checkbox"][role="switch"]:checked::before {
     --transformX: calc(100% + 6px);
 }

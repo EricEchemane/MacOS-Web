@@ -47,7 +47,7 @@ button:disabled {
 	cursor: not-allowed;
 	opacity: .5;
 }
-button:focus {
+button:focus-visible {
 	box-shadow: 0 0 0 2px var(--teal);
 }
 button:active {

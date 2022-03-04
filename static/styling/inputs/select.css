@@ -17,7 +17,7 @@ select {
     background-size: 1.3rem;
     cursor: pointer;
 }
-select:focus {
+select:focus-visible {
 	box-shadow: 0 0 0 2px var(--teal);
 }
 option {

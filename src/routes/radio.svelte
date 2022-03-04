@@ -9,6 +9,6 @@
 	<label for="dark" class="radio-container">
 		<input type="radio" name="theme" id="dark" />
 		<span class="radio" />
-		Light
+		Dark
 	</label>
 </main>
